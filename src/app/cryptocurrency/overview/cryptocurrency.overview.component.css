@@ -1,0 +1,75 @@
+.container {
+  width: 900px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.cryptobox-1,
+.cryptobox-2,
+.cryptobox-3,
+.cryptobox-4,
+.cryptobox-5,
+.cryptobox-6,
+.cryptobox-7,
+.cryptobox-8,
+.cryptobox-9,
+.cryptobox-10 {
+  font-family: Sans-serif, serif;
+  padding: 25px;
+  color: white;
+  font-size: 50px;
+}
+
+.cryptobox-1 {
+  background-color: #ffa813;
+  font-size: 250px;
+}
+
+.cryptobox-2 {
+  background-color: #ff971b;
+  font-size: 150px;
+}
+
+.cryptobox-3 {
+  background-color: #ff8420;
+  font-size: 100px;
+}
+
+.cryptobox-4 {
+  background-color: #ff791f;
+  font-size: 75px;
+}
+
+.cryptobox-5 {
+  background-color: #ff601e;
+  font-size: 70px;
+}
+
+.cryptobox-6 {
+  background-color: #ff4921;
+  font-size: 65px;
+}
+
+.cryptobox-7 {
+  background-color: #ff3826;
+  font-size: 60px;
+}
+
+.cryptobox-8 {
+  background-color: #ff2530;
+  font-size: 55px;
+}
+
+.cryptobox-9 {
+  background-color: #ff203b;
+  font-size: 50px;
+}
+
+.cryptobox-10 {
+  background-color: #ff1e45;
+  font-size: 45px;
+}
+
+
