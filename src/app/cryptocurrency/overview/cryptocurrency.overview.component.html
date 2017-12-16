@@ -1,7 +1,33 @@
+<header>
+  <form [formGroup]="typeAndAmountForm" class="form-inline" novalidate>
+    <div class="centerize">
+      <h1>
+        As of today, with
+        <input type="number" class="form-control" formControlName="cryptoAmount" min="1">
+        <select class="form-control" formControlName="cryptoType">
+          <option *ngFor="let cryptocurrency of cryptocurrencies" [ngValue]="cryptocurrency">
+            {{cryptocurrency.name}} (&#36;{{cryptocurrency.price_usd}})
+          </option>
+        </select>
+        you can buy
+      </h1>
+    </div>
+  </form>
+</header>
+
 <div class="container">
-  <div class="crypto-wrapper" *ngFor="let cryptocurrency of cryptocurrencies">
-    <div class="cryptobox-{{cryptocurrency.rank}}">
-      {{cryptocurrency.name}}
+  <div class="row" *ngIf="typeAndAmountForm.value.cryptoType">
+    <div class="product-container" *ngFor="let product of products">
+      <h3>{{getProductAmount(product)}} {{product.name}} <span class="product-price">(of &#36;{{product.priceInDollar}} / piece)</span></h3>
+      <div class="cryptobox">
+        <div class="square" *ngFor="let productDetail of getProductDetails(product)">
+          <img src="assets/{{productDetail}}">
+        </div>
+        <div class="square" *ngIf="getProductAmount(product) >= maxAmountOfProducts">+ {{getProductAmount(product) - maxAmountOfProducts}} more</div>
+        <div class="square" *ngIf="getProductAmount(product) === 0">
+          <img src="assets/default.png">
+        </div>
+      </div>
     </div>
   </div>
 </div>

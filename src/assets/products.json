@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Lamborghini Gallardos",
+    "priceInDollar": 225400,
+    "imgUrl": "tesla.png"
+  },
+  {
+    "name": "iPhone Xs",
+    "priceInDollar": 1149,
+    "imgUrl": "ihponex.png"
+  },
+  {
+    "name": "German Shepherds",
+    "priceInDollar": 325,
+    "imgUrl": "germanshepherd.png"
+  }
+]

@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs/Observable";
-import {Cryptocurrency} from "../domain/Cryptocurrency.class";
+import {Cryptocurrency} from "./Cryptocurrency.class";
 
 @Injectable()
 export class CryptocurrencyRemoteService {
