@@ -2,7 +2,7 @@
   <form [formGroup]="typeAndAmountForm" class="form-inline" novalidate>
     <div class="centerize">
       <h1>
-        As of today, with
+        As of this moment, with
         <input type="number" class="form-control" formControlName="cryptoAmount" min="1">
         <select class="form-control" formControlName="cryptoType">
           <option *ngFor="let cryptocurrency of cryptocurrencies" [ngValue]="cryptocurrency">
