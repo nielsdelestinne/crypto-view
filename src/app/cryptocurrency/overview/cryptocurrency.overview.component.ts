@@ -58,13 +58,13 @@ export class CryptocurrencyOverviewComponent implements OnInit {
       });
   }
 
-  getProductDetails(product: Product): String[] {
+  protected getProductDetails(product: Product): String[] {
     const productAmount: number = this.getProductAmount(product);
     return Array(productAmount > CryptocurrencyOverviewComponent.MAX_AMOUNT_OF_PRODUCTS ? CryptocurrencyOverviewComponent.MAX_AMOUNT_OF_PRODUCTS : productAmount)
       .fill(product.imgUrl);
   }
 
-  getProductAmount(product: Product): number {
+  protected getProductAmount(product: Product): number {
     return Math.floor(+this.typeAndAmountForm.value.cryptoType.price_usd * this.typeAndAmountForm.value.cryptoAmount / product.priceInDollar);
   }
 }
