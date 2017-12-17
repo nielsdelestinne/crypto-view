@@ -15,7 +15,7 @@
   </form>
 </header>
 
-<div class="container">
+<div class="container top-padding">
   <div class="row" *ngIf="typeAndAmountForm.value.cryptoType">
     <div class="product-container" *ngFor="let product of products">
       <h3>{{getProductAmount(product)}} {{product.name}} <span class="product-price">(&#36;{{product.priceInDollar}} / piece)</span></h3>

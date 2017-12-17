@@ -3,7 +3,31 @@ header {
   background-color: #ffa813;
   padding: 25px;
   color: #131313;
-  margin-bottom: 25px;
+  position: fixed;
+}
+
+@media (max-width: 2800px) {
+  .top-padding {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 1213px) {
+  .top-padding {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 746px) {
+  .top-padding {
+    padding-top: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-padding {
+    padding-top: 300px;
+  }
 }
 
 .container {
