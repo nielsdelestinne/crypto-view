@@ -14,7 +14,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Publishing to GitHub pages
 
-1. Build: `ng build --prod --base-href "https://nielsdelestinne.github.io/crypto-view"`
+1. Build: `ng build --prod --base-href "https://nielsdelestinne.github.io/crypto-view/"`
 2. Publish: `ngh`
 
 Using angular-cli-ghpages (installed with: `npm install -g angular-cli-ghpages`)
