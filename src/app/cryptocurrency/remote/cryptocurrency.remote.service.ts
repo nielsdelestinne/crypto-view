@@ -9,7 +9,7 @@ export class CryptocurrencyRemoteService {
   constructor(private http: HttpClient){};
 
   getCryptocurrencyTop10(): Observable<Array<Cryptocurrency>> {
-    return this.http.get<Array<Cryptocurrency>>("https://api.coinmarketcap.com/v1/ticker/?limit=10");
+    return this.http.get<Array<Cryptocurrency>>("https://api.coinmarketcap.com/v1/ticker/?limit=20");
   }
 
 }
