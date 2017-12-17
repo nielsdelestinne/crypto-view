@@ -13,5 +13,5 @@ export class Cryptocurrency {
               public percent_change_1h: string,
               public percent_change_24h: string,
               public percent_change_7d: string,
-              public last_updated: string) {};
+              public last_updated: string) {}
 }

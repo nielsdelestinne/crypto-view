@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit} from "@angular/core";
 import {CryptocurrencyRemoteService} from "../remote/cryptocurrency.remote.service";
 import {Cryptocurrency} from "../remote/Cryptocurrency.class";
 import {ProductService} from "../product/cryptocurrency.products.service";
@@ -6,13 +6,13 @@ import {Product} from "../product/Product.class";
 import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
-  selector: 'app-cryptocurrency.overview',
-  templateUrl: './cryptocurrency.overview.component.html',
-  styleUrls: ['./cryptocurrency.overview.component.css']
+  selector: "app-cryptocurrency.overview",
+  templateUrl: "./cryptocurrency.overview.component.html",
+  styleUrls: ["./cryptocurrency.overview.component.css"]
 })
 export class CryptocurrencyOverviewComponent implements OnInit {
 
-  protected static MAX_AMOUNT_OF_PRODUCTS: number = 50;
+  protected static MAX_AMOUNT_OF_PRODUCTS = 50;
 
   protected cryptocurrencies: Cryptocurrency[] = [];
   protected products: Product[] = [];
@@ -60,11 +60,18 @@ export class CryptocurrencyOverviewComponent implements OnInit {
 
   protected getProductDetails(product: Product): String[] {
     const productAmount: number = this.getProductAmount(product);
-    return Array(productAmount > CryptocurrencyOverviewComponent.MAX_AMOUNT_OF_PRODUCTS ? CryptocurrencyOverviewComponent.MAX_AMOUNT_OF_PRODUCTS : productAmount)
-      .fill(product.imgUrl);
+    return Array(this.getToppedOfAmountOfProducts(productAmount)).fill(product.imgUrl);
+  }
+
+  private getToppedOfAmountOfProducts(productAmount: number): number {
+    if (productAmount > CryptocurrencyOverviewComponent.MAX_AMOUNT_OF_PRODUCTS) {
+      return CryptocurrencyOverviewComponent.MAX_AMOUNT_OF_PRODUCTS;
+    }
+    return productAmount;
   }
 
   protected getProductAmount(product: Product): number {
-    return Math.floor(+this.typeAndAmountForm.value.cryptoType.price_usd * this.typeAndAmountForm.value.cryptoAmount / product.priceInDollar);
+    return Math.floor(+this.typeAndAmountForm.value.cryptoType.price_usd
+      * this.typeAndAmountForm.value.cryptoAmount / product.priceInDollar);
   }
 }
