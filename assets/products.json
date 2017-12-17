@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Lamborghini Gallardos",
+    "priceInDollar": 225400,
+    "imgUrl": "lambo.png"
+  },
+  {
+    "name": "Carribean cruises",
+    "priceInDollar": 4685.90,
+    "imgUrl": "carribean.png"
+  },
+  {
+    "name": "iPhone Xs",
+    "priceInDollar": 1149,
+    "imgUrl": "iphonex.png"
+  },
+  {
+    "name": "GTX 1080 Graphics cards",
+    "priceInDollar": 810.50,
+    "imgUrl": "gtx1080.png"
+  },
+  {
+    "name": "German Shepherds",
+    "priceInDollar": 325,
+    "imgUrl": "germanshepherd.png"
+  },
+  {
+    "name": "Years of Netflix",
+    "priceInDollar": 132,
+    "imgUrl": "netflix.png"
+  },
+  {
+    "name": "Pizzas",
+    "priceInDollar": 14.99,
+    "imgUrl": "pizza.png"
+  },
+  {
+    "name": "Fidget Spinners",
+    "priceInDollar": 6,
+    "imgUrl": "fidgetspinner.png"
+  }
+]
