@@ -4,6 +4,10 @@ A fun way to show the value / worth of the top cryptocurrencies.
 - Uses an external API for live data on the cryptocurrencies
 - Uses a local product feed for product information 
 
+## Live version
+
+A live version can be seen on `https://nielsdelestinne.github.io/crypto-view`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
