@@ -14,9 +14,9 @@ export class CryptocurrencyOverviewComponent implements OnInit {
 
   protected static MAX_AMOUNT_OF_PRODUCTS = 50;
 
-  protected cryptocurrencies: Cryptocurrency[] = [];
   protected products: Product[] = [];
-  protected typeAndAmountForm: FormGroup;
+  cryptocurrencies: Cryptocurrency[] = [];
+  typeAndAmountForm: FormGroup;
 
   constructor(private cryptocurrencyRemoteService: CryptocurrencyRemoteService,
               private productService: ProductService) {
