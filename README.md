@@ -1,6 +1,6 @@
 # CryptoView
 
-A fun way to show the value / worth of the top 10 cryptocurrencies.
+A fun way to show the value / worth of the top cryptocurrencies.
 - Uses an external API for live data on the cryptocurrencies
 - Uses a local product feed for product information 
 
